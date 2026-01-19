@@ -213,7 +213,7 @@ This skill is designed for:
 
 ## Related Projects
 
-- **Claude Code Skill** - Sister project with the same knowledge base for Claude Code: [macos-detect-and-respond](../macos-detect-and-respond/)
+- **Claude Code Skill** - Sister project with the same knowledge base for Claude Code: [macos-detect-and-respond-cc](https://github.com/null-event/macos-detect-and-respond-cc)
 
 ## License
 
