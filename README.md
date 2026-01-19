@@ -24,6 +24,10 @@ This skill is designed to work with [Gemini CLI](https://geminicli.com/).
 ```bash
 # Clone or copy this directory to your Gemini skills directory
 # The skill will be automatically discovered by Gemini
+gemini skills install https://github.com/null-event/macos-detect-and-respond-gemini.git
+
+# Or, install to the workspace scope (.gemini/skills)
+gemini skills install /path/to/skill --scope workspace
 
 # Verify the skill is loaded
 gemini skills list
