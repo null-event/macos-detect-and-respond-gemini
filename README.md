@@ -1,12 +1,14 @@
-# macOS Detect and Respond - Agentic Skill
+# macOS Detect and Respond - Agent Skill
 
-A comprehensive knowledge base for macOS threat detection and response, packaged as a Claude Code and Gemini CLI skill. Provides reference materials, workflows, and expert guidance for writing detections, analyzing telemetry, and triaging alerts on macOS systems.
+A comprehensive knowledge base for macOS threat detection and response, packaged as a Claude Code and Gemini CLI Agentic Skill. Provides reference materials, workflows, and expert guidance for writing detections, analyzing telemetry, and triaging alerts on macOS systems.
 
 <br>
 
 ## Overview
 
 This skill contains curated reference materials covering macOS security telemetry, adversary techniques, and detection engineering patterns across multiple platforms (Splunk, Sigma, osquery, Elastic, Sentinel, and more). It's designed to help security engineers, detection engineers, and threat hunters understand macOS-specific detection opportunities and build high-quality detections for macOS threats.
+
+For further reading on the Agent Skills open standard, please consult [Agent Skills Specification](https://agentskills.io/specification)
 
 ---
 
