@@ -1,12 +1,12 @@
 # macOS Detect and Respond - Gemini Skill
 
-A comprehensive knowledge base for macOS threat detection and response, packaged as a Gemini CLI skill. Provides reference materials, workflows, and expert guidance for writing detections, analyzing telemetry, and triaging alerts on macOS systems.
+A comprehensive knowledge base for macOS threat detection and response, packaged as a Claude Code and Gemini CLI skill. Provides reference materials, workflows, and expert guidance for writing detections, analyzing telemetry, and triaging alerts on macOS systems.
 
 <br>
 
 ## Overview
 
-This Gemini skill contains curated reference materials covering macOS security telemetry, adversary techniques, and detection engineering patterns across multiple platforms (Splunk, Sigma, osquery, Elastic, Sentinel, and more). It's designed to help security engineers, detection engineers, and threat hunters understand macOS-specific detection opportunities and build high-quality detections for macOS threats.
+This skill contains curated reference materials covering macOS security telemetry, adversary techniques, and detection engineering patterns across multiple platforms (Splunk, Sigma, osquery, Elastic, Sentinel, and more). It's designed to help security engineers, detection engineers, and threat hunters understand macOS-specific detection opportunities and build high-quality detections for macOS threats.
 
 ---
 
@@ -20,15 +20,50 @@ This Gemini skill contains curated reference materials covering macOS security t
 
 <br>
 
-## Gemini Skills vs. Extensions
+## Skills vs. Extensions
 
-Unlike general context files (GEMINI.md), which provide persistent workspace-wide background, Skills represent on-demand expertise. This allows Gemini to maintain a vast library of specialized capabilities—such as security auditing, cloud deployments, or codebase migrations—without cluttering the model's immediate context window.
+Unlike general context files (GEMINI.md or CLAUDE.md), which provide persistent workspace-wide background, Skills represent on-demand expertise. This allows Gemini to maintain a vast library of specialized capabilities—such as security auditing, cloud deployments, or codebase migrations—without cluttering the model's immediate context window.
 
-Gemini autonomously decides when to employ a skill based on your request and the skill's description. When a relevant skill is identified, the model "pulls in" the full instructions and resources required to complete the task using the activate_skill tool.
+Gemini/CC/etc autonomously decides when to employ a skill based on your request and the skill's description. When a relevant skill is identified, the model "pulls in" the full instructions and resources required to complete the task using the activate_skill tool.
 
 ---
+### MCP Client configuration
 
-## Installation
+<details>
+  <summary>Claude Code</summary>
+    Use the Claude Code CLI to add the Chrome DevTools MCP server (<a href="https://docs.anthropic.com/en/docs/claude-code/mcp">guide</a>):
+
+```bash
+claude mcp add chrome-devtools npx chrome-devtools-mcp@latest
+```
+
+</details>
+
+<details>
+  <summary>Cline</summary>
+  Follow https://docs.cline.bot/mcp/configuring-mcp-servers and use the config provided above.
+</details>
+
+## Agent Skills Installation
+
+<details>
+  <summary>Claude Code</summary>
+    Follow the Claude Code guide here to add the macOS Detect and Respond skill (<a href="https://code.claude.com/docs/en/skills">guide</a>):
+
+```bash
+git clone https://github.com/null-event/macos-detect-and-respond-skill.git ~/.claude/skills/macos-detect-and-respond-skill
+```
+
+</details>
+
+<details>
+  <summary>Gemini CLI</summary>
+  Follow the Gemini CLI guide here to add the macOS Detect and Respond skill (<a href="https://geminicli.com/docs/cli/skills">guide</a>):
+</details>
+
+```bash
+git clone https://github.com/null-event/macos-detect-and-respond-skill.git ~/.gemini/skills/macos-detect-and-respond-skill
+```
 
 ### Using with Gemini CLI
 
