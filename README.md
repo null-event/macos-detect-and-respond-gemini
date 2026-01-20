@@ -27,22 +27,6 @@ Unlike general context files (GEMINI.md or CLAUDE.md), which provide persistent 
 Gemini/CC/etc autonomously decides when to employ a skill based on your request and the skill's description. When a relevant skill is identified, the model "pulls in" the full instructions and resources required to complete the task using the activate_skill tool.
 
 ---
-### MCP Client configuration
-
-<details>
-  <summary>Claude Code</summary>
-    Use the Claude Code CLI to add the Chrome DevTools MCP server (<a href="https://docs.anthropic.com/en/docs/claude-code/mcp">guide</a>):
-
-```bash
-claude mcp add chrome-devtools npx chrome-devtools-mcp@latest
-```
-
-</details>
-
-<details>
-  <summary>Cline</summary>
-  Follow https://docs.cline.bot/mcp/configuring-mcp-servers and use the config provided above.
-</details>
 
 ## Agent Skills Installation
 
@@ -59,11 +43,14 @@ git clone https://github.com/null-event/macos-detect-and-respond-skill.git ~/.cl
 <details>
   <summary>Gemini CLI</summary>
   Follow the Gemini CLI guide here to add the macOS Detect and Respond skill (<a href="https://geminicli.com/docs/cli/skills">guide</a>):
-</details>
-
+  
 ```bash
+# Clone or copy this directory to your Gemini skills directory
+# The skill will be automatically discovered by Gemini
+# Note: as of 01/20/26 this is still a feature enabled via experimental.skills. You can also search for “Skills” within the /settings interactive UI to toggle this and manage other skill-related settings in Gemini.
 git clone https://github.com/null-event/macos-detect-and-respond-skill.git ~/.gemini/skills/macos-detect-and-respond-skill
 ```
+</details>
 
 ### Using with Gemini CLI
 
