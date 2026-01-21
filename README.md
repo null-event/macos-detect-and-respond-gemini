@@ -1,4 +1,4 @@
-# macOS Detect and Respond - Agent Skill
+# macOS Detect and Respond - Agent Skills
 
 A comprehensive knowledge base for macOS threat detection and response, packaged as a Claude Code and Gemini CLI Agentic Skill. Provides reference materials, workflows, and expert guidance for writing detections, analyzing telemetry, and triaging alerts on macOS systems.
 
@@ -39,7 +39,7 @@ Gemini/CC/etc autonomously decides when to employ a skill based on your request 
 ```bash
 # Clone or copy this directory to your Claude Code skills directory
 # The skill will be automatically discovered by Claude Code
-git clone https://github.com/null-event/macos-detect-and-respond-skill.git ~/.claude/skills/macos-detect-and-respond-skill
+git clone https://github.com/null-event/macos-detect-and-respond-skills.git ~/.claude/skills/macos-detect-and-respond-skills
 ```
 
 </details>
@@ -53,7 +53,7 @@ git clone https://github.com/null-event/macos-detect-and-respond-skill.git ~/.cl
 # The skill will be automatically discovered by Gemini
 # Note: as of 01/20/26 this is still a feature enabled via experimental.skills. You can also search for “Skills” within the /settings interactive UI to toggle this and manage other skill-related settings in Gemini.
 
-git clone https://github.com/null-event/macos-detect-and-respond-skill.git ~/.gemini/skills/macos-detect-and-respond-skill
+git clone https://github.com/null-event/macos-detect-and-respond-skills.git ~/.gemini/skills/macos-detect-and-respond-skills
 ```
 </details>
 
